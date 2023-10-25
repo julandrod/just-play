@@ -3,12 +3,14 @@ const { Games } = require("../database/models");
 const CustomError = require("../helpers/errorResponse");
 
 /**
- * Find all games in the database
- *
+ * Find all games in the database, can take some inputs to filter the output
+ * @param {String} filter Text to filter the output, can be a team name, location or city  
+ * @param {Enum} status Status of the game, can be 'pending', 'done' or 'cancel'  
+ * @param {Date} date date of the game in the format Y-M-D (2023-10-25T00:00:00.000Z) 
+ * @param {Time} time time of the game in the format HH:MM (10:50)  
  * @returns rows - Array with a list of games in the database
  * @returns count - count of games in the database
  */
-// TODO: add more query params
 const findAllGames = async ({ filter, status, date, time }) => {
   try {
     console.log(status);
