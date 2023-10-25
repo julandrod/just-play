@@ -46,3 +46,5 @@ const startApi = async () => {
 };
 
 startApi();
+
+module.exports = app;

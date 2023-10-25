@@ -1,18 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "app.js",
-      "use": "@now/node",
-      "config": {
-        "installCommand": "npm install pg"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.js"
-    }
-  ]
+    "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 }
