@@ -10,7 +10,7 @@
 const FilterItem = ({ placeholder, type, name, value, onChange }) => {
   return (
     <div className="my-4 px-2">
-      <input className="block w-52 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+      <input className="block w-80 md:w-52 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         placeholder={placeholder}
         type={type}
         name={name}
