@@ -6,7 +6,7 @@ export const getAllGames = createAsyncThunk(
   async ({ filter, status, date, time }, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/games/?filter=${filter}&status=${status}&date=${date}&time=${time}`
+        `https://just-play.onrender.com/api/v1/games/?filter=${filter}&status=${status}&date=${date}&time=${time}`
       );
       return data;
     } catch (error) {
@@ -22,7 +22,7 @@ export const getSingleGame = createAsyncThunk(
     console.log(gameId);
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/v1/games/${gameId}`
+        `https://just-play.onrender.com/api/v1/games/${gameId}`
       );
       return data;
     } catch (error) {
@@ -36,7 +36,7 @@ export const createGame = createAsyncThunk(
   "games/createGame",
   async ({ location, city, date, time, teams }, { rejectWithValue }) => {
     try {
-      const { data } = await axios.post("http://localhost:5000/api/v1/games/", {
+      const { data } = await axios.post("https://just-play.onrender.com/api/v1/games/", {
         location,
         city,
         date,
