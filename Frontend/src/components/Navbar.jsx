@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/just-play-logo.png";
+import logo from "../../public/assets/just-play-logo.png";
 
 const Navbar = () => {
   return (

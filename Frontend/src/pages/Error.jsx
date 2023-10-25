@@ -1,4 +1,4 @@
-import notFound from "../assets/error-404.jpg";
+import notFound from "../../public/assets/error-404.jpg";
 import { Hero } from "../components";
 
 const Error = () => {

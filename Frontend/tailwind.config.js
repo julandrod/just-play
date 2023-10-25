@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "soccer-field": "url('src/assets/soccer-field.jpg')",
-        "footer-pattern": "url('src/assets/floor-tile.png')",
-        "field-pattern": "url('src/assets/soccer-field-2.jpg')"
+        "soccer-field": "url('public/assets/soccer-field.jpg')",
+        "footer-pattern": "url('public/assets/floor-tile.png')",
+        "field-pattern": "url('public/assets/soccer-field-2.jpg')"
       },
       colors:{
         "primary-red": "#F9595F",
