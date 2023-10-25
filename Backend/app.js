@@ -1,7 +1,9 @@
 require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
-const cors = require("cors")
+const cors = require("cors");
+const swaggerJsdoc = require("swagger-jsdoc");
+const swaggerUi = require("swagger-ui-express");
 
 // Import database
 const db = require("./database/models");
@@ -11,6 +13,7 @@ const routes = require("./routes");
 
 // Middlewares
 const { notFoundMiddleware, errorsMiddleware } = require("./middlewares");
+const options = require("./swagger-doc/options");
 
 // API config
 const app = express();
@@ -25,9 +28,15 @@ app.get("/", (req, res) => {
 });
 app.use("/api/v1", routes);
 
+// Swagger Documentation route
+const specs = swaggerJsdoc(options);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+
 // Handle errors
-app.use(notFoundMiddleware)
-app.use(errorsMiddleware)
+app.use(notFoundMiddleware);
+app.use(errorsMiddleware);
+
+
 
 // Start API
 const startApi = async () => {
