@@ -1,10 +1,14 @@
 
-# Backend - Just Play App
+# 🖧 Backend - Just Play App
 
-## Tech Stack
+## 🛠 Tech Stack
 
-Node, Express, Sequelize, Express-Validator, PostgreSQL
-
+![image](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
+) ![image](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white
+) ![image](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white
+) ![image](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+) ![image](https://img.shields.io/badge/Express%20Validator-666766?style=for-the-badge) ![image](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white
+)
 
 ## Environment Variables
 

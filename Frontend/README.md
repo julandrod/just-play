@@ -1,10 +1,14 @@
-# Frontend - Just Play App
+# 🖵 Frontend - Just Play App
 
-## Tech Stack
+## 🛠 Tech Stack
 
-Vite, React, Reduxjs/toolkit, Tailwind, Axios, React Router, Formik, Yup, SwwetAlert
+![image](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E
+) ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![image](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white) ![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+) ![image](https://img.shields.io/badge/Formik-666766?style=for-the-badge
+) ![image](https://img.shields.io/badge/YUP-666766?style=for-the-badge
+)
 
-## Run Locally
+## 💻 Run Locally
 
 Clone the project
 
