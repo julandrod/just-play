@@ -48,7 +48,7 @@ const CreateGame = () => {
         description=" It's time to be the mastermind behind the plays and let your football imagination run wild!"
       />
       <section className="flex bg-soccer-field items-center justify-center">
-        <div className="lg:w-6/12 px-4 m-8 md:px-0 bg-white">
+        <div className="w-full lg:w-6/12 px-4 m-8 md:px-0 bg-white">
           <div className="md:p-12 md:mx-6">
             <Formik
               initialValues={{

@@ -13,7 +13,7 @@ const GameCard = ({ game }) => {
   const { location, city, date, time, image, teams, status } = game;
 
   return (
-    <div className="flex w-full h-52 md:h-60 md:w-96 border-4 capitalize hover:border-primary-red">
+    <div className="flex w-full h-64 md:h-60 md:w-96 border-4 capitalize hover:border-primary-red">
       <div className="flex w-2/5 items-center justify-center">
         <img src={image} alt="" className="h-32 w-auto" />
       </div>

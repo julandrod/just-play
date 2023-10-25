@@ -21,7 +21,7 @@ const GamesList = ({ games }) => {
 
   return (
     <>
-      <div className="p-8 grid sm::grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 place-items-center">
+      <div className="md:p-8 md:grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-6 place-items-center">
         {games.map((game) => (
           <Link key={game.id} to={`/${game.id}`}>
             <GameCard game={game} />

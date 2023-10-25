@@ -40,7 +40,7 @@ const SingleGame = () => {
           <div className="bg-soccer-field w-full h-[500px] bg-cover z-10 flex items-center justify-center">
             <img className="h-auto w-96" src={image} alt="" />
           </div>
-          <div className="flex p-10 items-center justify-center">
+          <div className="flex flex-col md:flex-row p-10 items-center justify-center">
             <div className="flex flex-col align-top">
               <h1 className="font-bold text-3xl">Soccer game in {location}</h1>
               <h2 className="font-bold text-2xl py-4">
